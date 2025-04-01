@@ -1,0 +1,70 @@
+/* Inventory System Design - CSS Stylesheet */
+/* This stylesheet defines the styles for the Inventory System Design web application */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: linear-gradient(to right, #e6f7ff, #cceeff);
+    color: #333333;
+    padding-top: 70px;
+}
+h1, h2, h3 {
+    color: #333;
+}
+code {
+    background: #f4f4f4;
+    padding: 5px;
+    border-radius: 5px;
+}
+nav {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav a, nav button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+nav a:hover, nav button:hover {
+    color: #ffcc00;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 600px); /* Adjust for fixed nav height */
+    text-align: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #007bff;
+    min-width: 160px;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+}

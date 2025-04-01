@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vendor Management Architecture Overview</title>
+        <link rel="stylesheet" href="css/vendor_mgmt_arch_styles.css">
+    </head>
+    <body>
+        <h1>Vendor Management Module - System Architecture</h1>
+        <h2>Overview</h2>
+        <p>The Vendor Management Module is designed to handle vendor information, contracts, and pricing history within an enterprise system. This architecture provides a scalable, secure, and maintainable solution for managing vendor relationships.</p>
+        <h2>Architecture Diagram</h2>
+        <div class="diagram-container">
+            <img src="assets/images/vendor-management-architecture.drawio.png" 
+             alt="Vendor Management System Architecture Diagram"
+             title="Click to view larger version" />
+        <p><small><a href="assets/images/vendor-management-architecture.drawio.png" target="_blank">View full size diagram</a></small></p>
+        </div>
+        <h2>Component Breakdown</h2>
+    
+    <div class="component">
+        <h3>1. Presentation Layer</h3>
+        <ul>
+            <li><strong>Web Interface</strong>: React/Angular/Vue.js based UI for vendor management</li>
+            <li><strong>Mobile Interface</strong>: Responsive design or dedicated mobile app</li>
+            <li><strong>API Gateway</strong>: RESTful/GraphQL endpoints for external integrations</li>
+        </ul>
+    </div>
+    
+    <div class="component">
+        <h3>2. Application Services Layer</h3>
+        
+        <h4>Vendor Management Service</h4>
+        <ul>
+            <li>Manages vendor master data (contact info, tax IDs, certifications)</li>
+            <li>Handles vendor onboarding/offboarding workflows</li>
+            <li>Manages vendor categorization and classification</li>
+            <li>Vendor performance tracking and scoring</li>
+        </ul>
+        
+        <h4>Contract Management Service</h4>
+        <ul>
+            <li>Contract creation and lifecycle management</li>
+            <li>Contract versioning and amendments</li>
+            <li>Key date tracking (expirations, renewals)</li>
+            <li>Compliance monitoring</li>
+        </ul>
+        
+        <h4>Pricing History Service</h4>
+        <ul>
+            <li>Historical pricing data capture</li>
+            <li>Price change tracking and approval workflows</li>
+            <li>Price comparison and analytics</li>
+            <li>Contractual price compliance monitoring</li>
+        </ul>
+        
+        <h4>Document Management Service</h4>
+        <ul>
+            <li>Contract document storage</li>
+            <li>Vendor certification/document repository</li>
+            <li>Digital signature integration</li>
+            <li>Document version control</li>
+        </ul>
+    </div>
+    
+    <h2>Technical Specifications</h2>
+    
+    <h3>Database Schema Highlights</h3>
+    <table>
+        <tr>
+            <th>Table</th>
+            <th>Key Fields</th>
+        </tr>
+        <tr>
+            <td><strong>Vendor Table</strong></td>
+            <td>VendorID, Name, ContactInfo, TaxID, Status, Categories</td>
+        </tr>
+        <tr>
+            <td><strong>Contract Table</strong></td>
+            <td>ContractID, VendorID, Type, StartDate, EndDate, Terms</td>
+        </tr>
+        <tr>
+            <td><strong>PricingHistory Table</strong></td>
+            <td>PriceID, VendorID, ProductID, Price, EffectiveDate</td>
+        </tr>
+        <tr>
+            <td><strong>Document Table</strong></td>
+            <td>DocID, VendorID/ContractID, Type, StoragePath, Metadata</td>
+        </tr>
+    </table>
+    
+    <h3>API Endpoints (Sample)</h3>
+    <ul>
+        <li><code>GET /api/vendors</code> - List vendors with filters</li>
+        <li><code>POST /api/vendors</code> - Create new vendor</li>
+        <li><code>GET /api/vendors/{id}/contracts</code> - Get vendor contracts</li>
+        <li><code>POST /api/contracts/{id}/prices</code> - Add new price entry</li>
+        <li><code>GET /api/contracts/expiring</code> - List expiring contracts</li>
+    </ul>
+    
+    <h2>Deployment Architecture</h2>
+    <ul>
+        <li><strong>Cloud-native</strong>: Designed for AWS/Azure/GCP deployment</li>
+        <li><strong>Containerized</strong>: Docker containers for services</li>
+        <li><strong>Orchestration</strong>: Kubernetes for container management</li>
+        <li><strong>CI/CD Pipeline</strong>: Automated testing and deployment</li>
+    </ul>
+    </body>
+    <script src="js/scripts.js"></script>
+</html>

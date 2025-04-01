@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIO System Design - Ram Lekkala</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about_me_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>NIO System Design</h1>
+            <p class="tagline">Next-Generation Inventory Ordering Architecture</p>
+        </div>
+    </header>
+
+    <main class="container system-design-content">
+        <a href="about_me.html#projects" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+        </a>
+        
+        <section class="design-section">
+            <h2>System Overview</h2>
+            <p>This is a prototype for a next-generation inventory ordering system designed for restaurants. The system is capable of handling multiple vendors and automatically selecting the best quote based on various parameters.</p>
+            
+            <div class="design-image">
+                <img src="assets/images/nio-system-architecture.png" alt="NIO System Architecture">
+                <p class="image-caption">High-level system architecture diagram</p>
+            </div>
+        </section>
+
+        <section class="design-section">
+            <h2>Core Components</h2>
+            <div class="components-grid">
+                <div class="component-card">
+                    <h3><i class="fas fa-users-cog"></i> Vendor Management</h3>
+                    <p>Manages vendor details, contracts, and pricing history with performance analytics.</p>
+                </div>
+                <div class="component-card">
+                    <h3><i class="fas fa-boxes"></i> Inventory Management</h3>
+                    <p>Real-time stock tracking with ML-powered demand forecasting.</p>
+                </div>
+                <div class="component-card">
+                    <h3><i class="fas fa-balance-scale"></i> Quote Engine</h3>
+                    <p>Multi-vendor quote aggregation with weighted comparison algorithms.</p>
+                </div>
+                <div class="component-card">
+                    <h3><i class="fas fa-robot"></i> Order Optimization</h3>
+                    <p>Automatically selects optimal vendor based on cost, delivery time, and quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="design-section">
+            <h2>Technology Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Python (Django/Flask)</li>
+                        <li>Node.js</li>
+                        <li>Java (Spring Boot)</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Data</h3>
+                    <ul>
+                        <li>PostgreSQL (relational)</li>
+                        <li>MongoDB (unstructured)</li>
+                        <li>Redis (caching)</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Redux</li>
+                        <li>Chart.js</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Infrastructure</h3>
+                    <ul>
+                        <li>AWS ECS</li>
+                        <li>Kubernetes</li>
+                        <li>Terraform</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="design-section">
+            <h2>Workflow Process</h2>
+            <ol class="workflow-steps">
+                <li>
+                    <strong>Inventory Check</strong>
+                    <p>Continuous monitoring of stock levels with automatic reorder triggers</p>
+                </li>
+                <li>
+                    <strong>Quote Request</strong>
+                    <p>Simultaneous API requests to multiple vendor systems</p>
+                </li>
+                <li>
+                    <strong>Quote Comparison</strong>
+                    <p>Weighted scoring considering price, delivery time, and quality</p>
+                </li>
+                <li>
+                    <strong>Order Placement</strong>
+                    <p>Automated PO generation with manual override capability</p>
+                </li>
+                <li>
+                    <strong>Delivery Tracking</strong>
+                    <p>Real-time shipment tracking with exception handling</p>
+                </li>
+                <li>
+                    <strong>Analytics</strong>
+                    <p>Vendor performance tracking and predictive analytics</p>
+                </li>
+            </ol>
+            
+            <div class="design-image">
+                <img src="assets/images/nio-workflow.png" alt="NIO Workflow">
+                <p class="image-caption">End-to-end ordering workflow</p>
+            </div>
+        </section>
+
+        <section class="design-section">
+            <h2>Future Roadmap</h2>
+            <div class="roadmap">
+                <div class="roadmap-phase">
+                    <h3>Phase 1</h3>
+                    <ul>
+                        <li>Blockchain integration for vendor contracts</li>
+                        <li>AI-powered price negotiation</li>
+                    </ul>
+                </div>
+                <div class="roadmap-phase">
+                    <h3>Phase 2</h3>
+                    <ul>
+                        <li>Sustainability scoring system</li>
+                        <li>Carbon footprint tracking</li>
+                    </ul>
+                </div>
+                <div class="roadmap-phase">
+                    <h3>Phase 3</h3>
+                    <ul>
+                        <li>Mobile app for field staff</li>
+                        <li>IoT integration for smart storage</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Ram Lekkala. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

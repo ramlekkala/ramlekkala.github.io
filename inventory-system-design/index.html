@@ -3,108 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next-Gen Inventory Ordering System Design</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background: linear-gradient(to right, #e6f7ff, #cceeff);
-            color: #333333;
-            padding-top: 70px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        code {
-            background: #f4f4f4;
-            padding: 5px;
-            border-radius: 5px;
-        }
-        nav {
-            width: 100%;
-            margin-bottom: 20px;
-            background: #007bff;
-            padding: 10px;
-            border-radius: 5px;
-            display: flex;
-            justify-content: flex-start;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-left: 15px;
-        }
-        nav a:hover {
-            color: #ffcc00;
-        }
-        .center-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: calc(100vh - 600px); /* Adjust for fixed nav height */
-            text-align: center;
-        }
-    </style>
+    <title>Ram Lekkala - Lead Software Engineer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about_me_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="#" onclick="loadContent('about_me.html')">About Me</a>
-        <a href="#" onclick="showHomePage()">Projects</a>   
-    </nav>
-    <div id="home-content">
-        <div class="center-content">
-            <h1>Next-Gen Inventory Ordering System Design</h1>
+    <header class="main-header">
+        <div class="container">
+            <h1>Ram Lekkala</h1>
+            <p class="tagline">Lead Software Engineer | Cloud Architect | DevOps Specialist</p>
         </div>
-        <p>This is a prototype for a next-generation inventory ordering system designed for restaurants. The system is capable of handling multiple vendors and automatically selecting the best quote based on various parameters.</p>
-    <h2>System Architecture</h2>
-    <p>The system consists of the following components:</p>
-    <ul>
-        <li><strong>Vendor Management Module</strong>: Manages vendor details, contracts, and pricing history.</li>
-        <li><strong>Inventory Management Module</strong>: Tracks inventory levels and predicts demand.</li>
-        <li><strong>Quote Aggregation and Comparison Engine</strong>: Collects and compares quotes from multiple vendors.</li>
-        <li><strong>Order Optimization Engine</strong>: Automatically selects the best quote and places the order.</li>
-        <li><strong>User Interface (UI)</strong>: Provides an intuitive interface for restaurant staff.</li>
-        <li><strong>Integration Layer</strong>: Facilitates communication with external vendors and systems.</li>
-        <li><strong>Analytics and Reporting Module</strong>: Provides insights into inventory usage and vendor performance.</li>
-        <li><strong>Notification System</strong>: Keeps stakeholders informed about critical events.</li>
-    </ul>
+    </header>
 
-    <h2>Technology Stack</h2>
-    <ul>
-        <li><strong>Backend</strong>: Python (Django/Flask), Node.js, or Java (Spring Boot).</li>
-        <li><strong>Database</strong>: PostgreSQL or MySQL for relational data; MongoDB for unstructured data.</li>
-        <li><strong>Frontend</strong>: React.js or Angular for the user interface.</li>
-        <li><strong>Machine Learning</strong>: TensorFlow or Scikit-learn for demand forecasting and optimization.</li>
-        <li><strong>APIs</strong>: RESTful APIs or GraphQL for integration.</li>
-        <li><strong>Cloud</strong>: AWS, Azure, or Google Cloud for scalability and reliability.</li>
-        <li><strong>Messaging</strong>: RabbitMQ or Kafka for asynchronous communication.</li>
-    </ul>
+    <main class="container">
+        <section class="hero-section">
+            <div class="profile-intro">
+                <img src="assets/images/Ram_Photo.JPG" alt="Ram Lekkala" class="profile-image">
+                <div class="intro-text">
+                    <h2>Hello! I'm Ram Lekkala</h2>
+                    <p class="lead">A results-driven Lead Software Engineer with over <span class="highlight">14 years of experience</span> building scalable, high-performance applications and leading teams to deliver cutting-edge enterprise solutions.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn-primary">Let's Connect</a>
+                        <a href="#expertise" class="btn-secondary">My Expertise</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2>Workflow</h2>
-    <ol>
-        <li><strong>Inventory Check</strong>: The system monitors stock levels and triggers a reorder when thresholds are met.</li>
-        <li><strong>Quote Request</strong>: The system sends quote requests to multiple vendors via APIs.</li>
-        <li><strong>Quote Comparison</strong>: Quotes are aggregated and compared using a weighted scoring system.</li>
-        <li><strong>Order Placement</strong>: The best quote is selected, and the order is placed automatically (or manually overridden).</li>
-        <li><strong>Delivery Tracking</strong>: The system tracks delivery status and updates inventory upon receipt.</li>
-        <li><strong>Analytics</strong>: Data is collected for reporting and future optimization.</li>
-    </ol>
+        <section id="expertise" class="expertise-section">
+            <h2>What I Bring to the Table</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3>Technical Expertise</h3>
+                    <p>Java, Python, AWS, Kubernetes, Microservices, CI/CD automation, and more.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Proven Track Record</h3>
+                    <p>Designed and implemented scalable cloud architectures for enterprise systems.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Leadership</h3>
+                    <p>Leading cross-functional teams to deliver high-impact projects successfully.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>System Integration</h3>
+                    <p>Strong background in enterprise software development and seamless integrations.</p>
+                </div>
+            </div>
+        </section>
 
-    <h2>Future Enhancements</h2>
-    <ul>
-        <li><strong>Blockchain Integration</strong>: For transparent and tamper-proof vendor transactions.</li>
-        <li><strong>AI-Powered Negotiation</strong>: Automatically negotiate prices with vendors.</li>
-        <li><strong>Sustainability Metrics</strong>: Include eco-friendly options in quote comparisons.</li>
-        <li><strong>Mobile App</strong>: For on-the-go inventory management and order tracking.</li>
-    </ul>
-    </div>
-    <div id="content" style="display: none;"></div>
+        <section class="passion-section">
+            <h2>Areas of Passion</h2>
+            <div class="passion-list">
+                <div class="passion-item">
+                    <span class="icon">☁️</span>
+                    <h3>Cloud-Native Architecture</h3>
+                    <p>Designing modern, scalable, and resilient cloud-based solutions.</p>
+                </div>
+                <div class="passion-item">
+                    <span class="icon">⚙️</span>
+                    <h3>Automation</h3>
+                    <p>Leveraging DevOps best practices to streamline processes.</p>
+                </div>
+                <div class="passion-item">
+                    <span class="icon">🔒</span>
+                    <h3>Enterprise Security</h3>
+                    <p>Ensuring robust security in every solution.</p>
+                </div>
+                <div class="passion-item">
+                    <span class="icon">💡</span>
+                    <h3>Innovation</h3>
+                    <p>Exploring new technologies to drive innovation.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card nio-project">
+                    <div class="project-image">
+                        <img src="assets/images/nio-project-thumbnail.png" alt="NIO Project Architecture">
+                    </div>
+                    <div class="project-details">
+                        <h3>NIO - Next-Gen Inventory Ordering System</h3>
+                        <p class="project-tech">Java | Python | React | Springboot | PostgreSQL | Kafka | AWS</p>
+                        <p class="project-description">Designed a comprehensive inventory ordering system that automates vendor selection, reduces costs by 15-20%, and optimizes inventory levels using predictive analytics.</p>
+                        <div class="project-links">
+                            <a href="/system_design.html" class="btn-architecture">
+                                <i class="fas fa-project-diagram"></i> System Design |
+                            </a>
+                            <a href="javascript:void(0)" class="btn-architecture" onclick="showArchitecture('nio-vendor-architecture')">
+                                <i class="fas fa-network-wired"></i>  Vendor Architecture
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mission-section">
+            <h2>Why I Do What I Do</h2>
+            <div class="mission-content">
+                <p>Technology is more than just a career for me—it's a passion. I thrive on solving complex problems, optimizing systems, and delivering solutions that exceed business goals.</p>
+                <p>Whether architecting cloud-native applications, automating CI/CD pipelines, or mentoring teams, I'm committed to driving innovation and achieving excellence in every project.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Let's Work Together</h2>
+            <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
+            <div class="contact-options">
+                <a href="mailto:rammlekkala@gmail.com" class="btn-primary">Email Me</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="btn-secondary">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank" class="btn-secondary">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Ram Lekkala. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="js/scripts.js"></script>
+    <script>
+        // Simple script to update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
